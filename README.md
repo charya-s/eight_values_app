@@ -9,7 +9,7 @@ I'm not affiliated with the creator(s) of 8values.github.io in any way. Their pr
 
 ## Introduction
 
-I've done the 8Values quiz on its original site many times over the years and found it to be pretty accurate when it labelled me what it thought was approriate. Since the webapp was open source, it was quite easy to deduce the algorithm by going through the source code and dry running it. 
+I've done the 8Values quiz on its original site many times over the years and found it to be pretty accurate when it labelled me what it thought was appropriate. Since the web-app was open source, it was quite easy to deduce the algorithm by going through the source code and dry running it. 
 
 As for this app; I created it while learning how to work with Flutter. This is my very first app and I'm pretty satisfied with how it turned out. There's a lot to be desired visually, sure, but I think it's a pretty solid starting point and I might come back to it later with a bit more experience and improve the UX. This app won't be released for iOS as I don't have the resources to build or test iOS apps.
 <br/><br/>
@@ -20,7 +20,7 @@ There are a few steps to the calculation.
 ### Setting Up the Data
 Each question (out of the 70 available) has four values for "econ" (economic axis), "dipl" (diplomatic axis), "govt" (civil axis) and "scty" (societal axis) <strong>(question_data.dart).</strong>
 
-Also, each answer is given a weighting with "Strongly Agree" given a weight of 1, "Agree" given a weight of 0.5, "Neutral" given a weight of 0, "Disagree" given a weight of -0.5 and "Strongly Disgaree" given a weight of -1 <strong>(answer_data.dart).</strong>
+Also, each answer is given a weighting with "Strongly Agree" given a weight of 1, "Agree" given a weight of 0.5, "Neutral" given a weight of 0, "Disagree" given a weight of -0.5 and "Strongly Disagree" given a weight of -1 <strong>(answer_data.dart).</strong>
 
 Finally, a list of ideologies is created with a score for each axis that would result in that ideology being selected <strong>(result_data.dart)</strong> along with a list of titles for each axis that is dependant on the score for that axis <strong>(axis_data.dart)</strong>.
 
@@ -34,7 +34,7 @@ When all the questions have been answered, the score for each axis is compared t
 ### Figuring out the Results
 The percentage scores for each axis is then compared to the axis titles directly to figure out the label for each axis. 
 
-Finally, a simple distance formula is used with varying exponentials (given below) to calculate the distances from the percentage scores for each axis to the respective axes of each possible ideology. The ideologies that is the closest is selected. 
+Finally, a simple distance formula is used with varying exponential values (given below) to calculate the distances from the percentage scores for each axis to the respective axes of each possible ideology. The ideologies that is the closest is selected. 
 
 <pre>
   dist  = dist + ((ideology_econ - econ_percentage) ^ 2 )
