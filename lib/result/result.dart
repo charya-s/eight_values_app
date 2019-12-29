@@ -91,7 +91,7 @@ List findResult(final List<Map<String, Object>> resultData, final List<Map<Strin
       }
     }
 
-    return [index, 10.0, 10.0, 10.0, 10.0];
+    return [index, eVal, dVal, gVal, sVal];
   }
 
 
