@@ -41,7 +41,7 @@ class ResultDesc extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
                           Text("Equality", style: axisTitle),
-                          Text("${100 - titles[0]["value"]}%", style: axisTitle),
+                          Text("${titles[0]["value"]}%", style: axisTitle),
                         ]
                       ),
                     ),
@@ -50,7 +50,7 @@ class ResultDesc extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
-                          Text("${titles[0]["value"]}%", style: axisTitle),
+                          Text("${100 - titles[0]["value"]}%", style: axisTitle),
                           Text("Markets", style: axisTitle),
                         ]
                       ),
@@ -113,7 +113,7 @@ class ResultDesc extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
                           Text("Liberty", style: axisTitle),
-                          Text("${100 - titles[2]["value"]}%", style: axisTitle),
+                          Text("${titles[2]["value"]}%", style: axisTitle),
                         ]
                       ),
                     ),
@@ -122,7 +122,7 @@ class ResultDesc extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
-                          Text("${titles[2]["value"]}%", style: axisTitle),
+                          Text("${100 - titles[2]["value"]}%", style: axisTitle),
                           Text("Authority", style: axisTitle),
                         ]
                       ),
