@@ -31,6 +31,15 @@ dev_dependencies:
 
   eva_icons_flutter: ^2.0.0
 
+  flutter_launcher_icons: "^0.7.0"
+
+flutter_icons:
+  ios: true
+  android: true
+  image_path_ios: "./resources/launcher_icons/icon.png"
+  image_path_android: "./resources/launcher_icons/icon.png"
+  adaptive_icon_background: "./resources/launcher_icons/background.png"
+  adaptive_icon_foreground: "./resources/launcher_icons/foreground.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
