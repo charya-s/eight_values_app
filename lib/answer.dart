@@ -11,7 +11,7 @@ class Answer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom: 15),
+      margin: EdgeInsets.only(top: 15),
       width: 250,
       height: 40,
       child: RaisedButton(
@@ -27,7 +27,6 @@ class Answer extends StatelessWidget {
           
         ),
         textColor: Colors.black,
-        highlightColor: Colors.blue,
       ),      
     );
   }

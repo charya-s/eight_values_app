@@ -40,15 +40,19 @@ class Result extends StatelessWidget {
       },
     ];
 
-    return Container(
-      margin: EdgeInsets.only(top: 20, left: 40, right: 40),
-      width: double.infinity,
-      child: Column(
-        children: <Widget>[ 
-          ResultTitle(title: resultData[result[0]]["name"]),
-          ResultDesc(titles: resultTitles),
-        ],
-      ),
+    return ListView(
+      children: <Widget>[
+        Container(
+          margin: EdgeInsets.only(top: 20, left: 40, right: 40),
+          width: double.infinity,
+          child: Column(
+            children: <Widget>[ 
+              ResultTitle(title: resultData[result[0]]["name"]),
+              ResultDesc(titles: resultTitles),
+            ],
+          ),
+        )
+      ]
     );
   }
 }

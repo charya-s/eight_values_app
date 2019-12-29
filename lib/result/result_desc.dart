@@ -27,7 +27,6 @@ class ResultDesc extends StatelessWidget {
 
           // ECONOMIC AXIS
           Container(
-            height: MediaQuery.of(context).size.height * 0.075,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
@@ -36,6 +35,7 @@ class ResultDesc extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Container(
+                      height: MediaQuery.of(context).size.height * 0.05,
                       width: MediaQuery.of(context).size.width * 0.35,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -46,6 +46,7 @@ class ResultDesc extends StatelessWidget {
                       ),
                     ),
                     Container(
+                      height: MediaQuery.of(context).size.height * 0.05,
                       width: MediaQuery.of(context).size.width * 0.35,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -63,7 +64,6 @@ class ResultDesc extends StatelessWidget {
 
           // DIPLOMATIC AXIS
           Container(
-            height: MediaQuery.of(context).size.height * 0.075,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
@@ -72,6 +72,7 @@ class ResultDesc extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Container(
+                      height: MediaQuery.of(context).size.height * 0.05,
                       width: MediaQuery.of(context).size.width * 0.35,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -82,6 +83,7 @@ class ResultDesc extends StatelessWidget {
                       ),
                     ),
                     Container(
+                      height: MediaQuery.of(context).size.height * 0.05,
                       width: MediaQuery.of(context).size.width * 0.35,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -99,7 +101,6 @@ class ResultDesc extends StatelessWidget {
 
           // CIVIL AXIS
           Container(
-            height: MediaQuery.of(context).size.height * 0.075,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
@@ -108,6 +109,7 @@ class ResultDesc extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Container(
+                      height: MediaQuery.of(context).size.height * 0.05,
                       width: MediaQuery.of(context).size.width * 0.35,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -118,6 +120,7 @@ class ResultDesc extends StatelessWidget {
                       ),
                     ),
                     Container(
+                      height: MediaQuery.of(context).size.height * 0.05,
                       width: MediaQuery.of(context).size.width * 0.35,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -135,7 +138,6 @@ class ResultDesc extends StatelessWidget {
 
           // SOCIETAL AXIS
           Container(
-            height: MediaQuery.of(context).size.height * 0.075,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
@@ -144,6 +146,7 @@ class ResultDesc extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Container(
+                      height: MediaQuery.of(context).size.height * 0.05,
                       width: MediaQuery.of(context).size.width * 0.35,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -154,6 +157,7 @@ class ResultDesc extends StatelessWidget {
                       ),
                     ),
                     Container(
+                      height: MediaQuery.of(context).size.height * 0.05,
                       width: MediaQuery.of(context).size.width * 0.35,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,

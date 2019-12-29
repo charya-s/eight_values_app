@@ -29,35 +29,39 @@ class MainPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.grey[100],
-      child: Column(
-        children: 
-          ( 
-            <Widget>[
-              Container (
-                child: 
-                (
-                  (questionIndex < questions.length) ? 
-                    Quiz(questions: questions, answers: answers, answerQuestion: answerQuestion, questionIndex: questionIndex)
-                  :
-                    Result(score: score, questions: questions)
-                ),
-                height: MediaQuery.of(context).size.height * 0.7,
-              ),
-              Container(
-                width: MediaQuery.of(context).size.width * 0.5,
-                child: Row(
-                  children: <Widget>[
-                    PrevButton(prevQuestion, prevDisabled: prevDisabled),
-                    ResetButton(resetQuiz),
-                  ],
-                ),
-              ),
-              
-            ]
-          )
-      ),
+    return ListView(
+      children: <Widget>[
+        Container(
+          color: Colors.grey[100],
+          child: Column(
+            children: 
+              ( 
+                <Widget>[
+                  Container (
+                    height: MediaQuery.of(context).size.height * 0.725,
+                    child: 
+                    (
+                      (questionIndex < questions.length) ? 
+                        Quiz(questions: questions, answers: answers, answerQuestion: answerQuestion, questionIndex: questionIndex)
+                      :
+                        Result(score: score, questions: questions)
+                    ),
+                  ),
+                  Container(
+                    width: MediaQuery.of(context).size.width * 0.5,
+                    child: Row(
+                      children: <Widget>[
+                        PrevButton(prevQuestion, prevDisabled: prevDisabled),
+                        ResetButton(resetQuiz),
+                      ],
+                    ),
+                  ),
+                  
+                ]
+              )
+          ),
+        )
+      ]
     );
   }
 }

@@ -11,7 +11,7 @@ class Question extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: MediaQuery.of(context).size.height * 0.2,
+      height: MediaQuery.of(context).size.height * 0.21,
       child: Column(
         children: <Widget> [
           Container(
@@ -25,7 +25,7 @@ class Question extends StatelessWidget {
           ),
 
           Container(
-            margin: EdgeInsets.only(bottom: 20, left: 20, right: 20),
+            margin: EdgeInsets.only(bottom: 0, left: 20, right: 20),
             child: Text(
               questions[questionIndex]["question"],
               style: TextStyle(

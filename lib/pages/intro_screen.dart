@@ -11,64 +11,68 @@ class IntroScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.grey[100],
-      width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height,
-      child: Column(
-        children: <Widget>[
+    return ListView(
+      children: <Widget>[
+        Container(
+          color: Colors.grey[100],
+          width: MediaQuery.of(context).size.width,
+          margin: EdgeInsets.only(bottom: 40),
+          child: Column(
+            children: <Widget>[
 
-          // TITLE
-          Container( 
-            margin: EdgeInsets.only(top: 20),
-            child: Text(
-              introData["title"],
-              style: TextStyle(
-                fontSize: 35,
-                fontWeight: FontWeight.bold,
-                color: Colors.blueGrey[800]
-              ),
-            ),
-          ), 
+              // TITLE
+              Container( 
+                margin: EdgeInsets.only(top: 20),
+                child: Text(
+                  introData["title"],
+                  style: TextStyle(
+                    fontSize: 35,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueGrey[800]
+                  ),
+                ),
+              ), 
 
-          // DESCRIPTION
-          Container( 
-            margin: EdgeInsets.only(top: 20, left: 40, right: 40),
-            child: Text(
-              introData["desc"],
-              style: TextStyle(
-                fontSize: 17.5,
-              ),
-              textAlign: TextAlign.center,
-            ),
-          ), 
+              // DESCRIPTION
+              Container( 
+                margin: EdgeInsets.only(top: 20, left: 40, right: 40),
+                child: Text(
+                  introData["desc"],
+                  style: TextStyle(
+                    fontSize: 17.5,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ), 
 
-          // DISCLAIMERS
-          Container( 
-            margin: EdgeInsets.only(top: 20, left: 40, right: 40),
-            child: Text(
-              introData["disc"],
-              style: TextStyle(
-                fontSize: 17.5,
-                fontStyle: FontStyle.italic,
-              ),
-              textAlign: TextAlign.center,
-            ),
-          ), 
+              // DISCLAIMERS
+              Container( 
+                margin: EdgeInsets.only(top: 20, left: 40, right: 40),
+                child: Text(
+                  introData["disc"],
+                  style: TextStyle(
+                    fontSize: 17.5,
+                    fontStyle: FontStyle.italic,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ), 
 
-          // START BUTTON
-          Container( 
-            margin: EdgeInsets.only(top: 40),
-            width: MediaQuery.of(context).size.width * 0.25,
-            child: FloatingActionButton.extended(
-              label: Text("BEGIN"),
-              onPressed: () => changePage(1),
-              backgroundColor: Colors.lightBlue,
-            ),
-          ), 
+              // START BUTTON
+              Container( 
+                margin: EdgeInsets.only(top: 40),
+                width: MediaQuery.of(context).size.width * 0.25,
+                child: FloatingActionButton.extended(
+                  label: Text("BEGIN"),
+                  onPressed: () => changePage(1),
+                  backgroundColor: Colors.lightBlue,
+                ),
+              ), 
 
-        ]
-      ),
+            ]
+          ),
+        )
+      ]
     );
   }
 }

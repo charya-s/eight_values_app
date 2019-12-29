@@ -21,7 +21,6 @@ class PrevButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        padding: EdgeInsets.only(bottom: MediaQuery.of(context).size.height * 0.1),
         child: Align(
           alignment: Alignment.bottomCenter,
           child: FloatingActionButton(
