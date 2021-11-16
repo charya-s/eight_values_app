@@ -57,7 +57,7 @@ As you can see, the values for the economic and civil axes are flipped from the 
 ## Final Notes
 This was a pretty fun app to create! Flutter, I've learned is extremely easy to pick up, especially if you've used something like React before (or JS in general, even) and it's very powerful when it comes to creating responsive user interfaces and apps really quickly. I'm looking forward to working with it more and figuring out some of the more difficult aspects of it. 
 
-Please feel free to contact me at arcturus.office@gmail.com if you have any concerns, doubts, questions or inquiries. 
+Please feel free to contact me at charyasendanayake3@gmail.com if you have any concerns, doubts, questions or inquiries. 
 
 Thank you for taking a peek at my app - I appreciate the support! 
 <br/><br/>
